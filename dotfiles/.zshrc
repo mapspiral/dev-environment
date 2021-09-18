@@ -127,6 +127,9 @@ alias cdir="cd ~/Code/github/dev-environment"
 alias 'gcnp!'="gcn! & gp --force"
 alias r="source ~/.zshrc"
 
+# Alias to open GitKraken using working directory
+alias gk="gitkraken -p=$(pwd)"
+
 if [ "$HOST" = ROSPC0329-LX ]; then
 export EDITOR=vi
 
