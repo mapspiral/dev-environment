@@ -22,7 +22,9 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 git clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 # Install application packages
-brew install iterm2 visual-studio-code 1password kubectl helm pock spotify microsoft-office signal dotnet microsoft-teams slack jetbrains
+brew install iterm2 visual-studio-code 1password kubectl helm pock spotify microsoft-office signal dotnet microsoft-teams slack rider tor-browser vlc
+
+brew install --cask transmission
 
 # Install application packages - k8s
 brew install kubectl helm
