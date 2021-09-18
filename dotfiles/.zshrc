@@ -10,7 +10,6 @@ fi
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
-
 export ZSH_THEME="powerlevel10k/powerlevel10k"
 
 #source $HOME/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme
@@ -129,11 +128,21 @@ alias 'gcnp!'="gcn! & gp --force"
 alias r="source ~/.zshrc"
 
 if [ "$HOST" = ROSPC0329-LX ]; then
+export EDITOR=vi
+
 alias cal="ncal -M -b"
 
-alias wd="cd /var/code/work"
-alias wdff="cd /var/code/work/ForFarmers"
-alias wdffda="cd /var/code/work/ForFarmers/DealerAutomatisering"
+alias wc="cd ~/Code/work"
+alias wcf="cd ~/Code/work/projects/ForFarmers"
+alias wcfd="cd ~/Code/work/projects/ForFarmers/Dealerautomatisering"
+alias wcfdd="cd ~/Code/work/projects/ForFarmers/Dealerautomatisering/Documentation"
+alias wcv="cd ~/Code/work/projects/Visma"
+alias wcvc="cd ~/Code/work/projects/Visma/Connectorplatform"
+
+alias docs_wcfdd="wcfdd && code . & ./docker-run.sh"
+
+alias rider_wcvc="wcvc && rider . &"
+
 else
 #    printf '%s\n' "uh-oh, not on foo"
 fi
